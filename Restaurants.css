@@ -1,0 +1,330 @@
+/* Restaurants page */
+
+body {
+    margin: 50px;
+}
+
+/* nav below */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #fff;
+}
+#logo {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links {
+    list-style: none;
+}
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    border-right: 1px solid #000;
+}
+.nav-links li:last-child {
+    border-right: none;
+}
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.nav-links li a:hover {
+    color: #0088a9;
+}
+
+/* body below */
+/* body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+} */
+
+.top-section {
+  border-style: solid;
+  border-color: grey;
+  border-width: 2px 2px;
+    padding: 30px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+h1 {
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-transform: uppercase;
+  font-family: "times new roman";
+}
+li{
+ display: inline-block;
+  text-align: center;
+  word-spacing: 0px;
+  margin: 10px;
+  font-style: italic;
+   font-size: 20px;
+ }
+
+.content-section {
+    display: flex;
+    width: 100%;
+}
+
+.left-section, .right-section {
+    padding: 20px;
+}
+
+.left-section {
+    flex: 2; /* Adjust the flex value to make it bigger */
+    background-color: white; /* Just for visualization */
+}
+.right-section {
+    flex: 1;
+    background-color: white;
+   
+}
+
+.left-section img {
+    width: 100%; /* Make the image take 100% of the container width */
+    height: auto; /* Maintain the aspect ratio */
+}
+/* Star rating styles */
+/*
+.star-rating {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    color: gold;
+}
+
+.full-star, .half-star {
+    color: gold;
+}
+
+.half-star {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 50%;
+}
+*/
+
+
+.star-rating {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    color: gold;
+}
+
+.star {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    position: relative;
+    margin-right: 0.1em;
+}
+
+.full-star::before {
+    content: '\2605'; /* Unicode character for a filled star */
+    position: absolute;
+    color: gold;
+}
+
+.half-star::before {
+    content: '\2605'; /* Unicode character for a filled star */
+    position: absolute;
+    color: gold;
+    clip: rect(0, 0.5em, 1em, 0);
+}
+
+/* Add this style for the rating text */
+.star-rating .rating-text {
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-left: 5px; /* Adjust the margin as needed */
+}
+
+
+ /* Restaurant information styles */
+ .restaurant-info {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+.show-info-button {
+    cursor: pointer;
+    background-color:  #d8d8d8;
+    color: black;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.restaurant-info p {
+    margin: 0 10px 0 0;
+}
+
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:  rgba(20, 5, 5, 0.45);
+  }
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  .text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  } 
+  /* for read more section */                 
+  .hidden-content {
+    display: none;
+}
+
+.gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 70%; 
+    }
+
+    .gallery-item {
+      margin-bottom: 100px; 
+      text-align: right;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .description {
+      padding: 10px;
+      background-color: #fff;
+      font-style: italic;
+    }
+
+.bottom-section {
+    background-color: white;
+    padding: 20px;
+  width: 100%;
+}
+
+.version-one h2 {
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "times new roman";
+}
+.accordion-body {
+    text-align: left;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-transform: none;
+  font-family: "ariel";
+  font-style: italic;
+}
+.container{
+    height: 100vh ;
+    display: center;
+    justify-content: center;
+    align-items: center;
+}
+ .accordion-body{
+    background:transparent;
+    font-size: 15px;
+}
+.accordion-item{
+    background: #fff;
+    border: none;
+    box-shadow: 2px 2px 8px;
+}
+
+/* footer below
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+}
+.footer-links li {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 2px solid #fff;
+}
+.footer-links li:last-child {
+    border-right: none;
+}
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.footer-links li a:hover {
+    color: #0088a9;
+}
+.bi {
+    font-size: 24px;           /* Adjust this value to suit your needs */
+/* }
+.social-links a {
+    color: #fff;              /* Changes the icon color to white */
+    /* margin: 0 10px;           /* Adds some space between the icons */
+    /* text-decoration: none;    /* Removes the default link underline */
+/* }
+.social-links a:hover {
+    color: #0088a9;           /* Light blue color when hover */
+/* }  */ 
+
+
+  

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- this link above has been taken from getbootstrap.com via CDN download, copied the top link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="homepage.css"/>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <h4>@LondonHotSpots</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Restaurants.html">Restaurants</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Discover London's Best: <br> Choose, Rate and Experience </br><br1> Your Favourites</br1></h1>
+                <p class="card-text">With city recommendations from other hotspotters who <br> have tried and tested! </br></p>
+                <div class="d-grid gap-2 d-md-block">
+                <a href="Restaurants.html" button class="btn btn-dark" type="button">Get Started</button></a>
+                <a href="Restaurants.html" button class="btn btn-light" type="button">Learn More</button></a>
+              </div></div>
+            <img src="feed-page.png" class="image" alt="image">
+        </div>
+    </div>
+     
+<!-- above is the title and below are the 3 images aligned -->
+
+ <h2>Hotspots of the week!</h2>
+
+ <main class="main-area">
+        
+  <div class="card-deck">
+
+      <section class="cards">
+          
+          <article class="card-1">
+              <a href="#">
+                <div class="card-image">
+                <picture class="thumbnail">
+                    <img src="aged.jpg" alt="">
+                </picture>
+                </div>
+              </a>
+          </article> <!-- .card -->
+
+          <article class="card-1">
+              <a href="#">
+                <div class="card-image">
+                <picture class="thumbnail">
+                    <img src="orange.jpg" alt="">
+                </picture>
+                </div>
+              </a>
+          </article> <!-- .card -->
+
+          <article class="card-1">
+              <a href="#">
+                <div class="card-image-1">
+                <picture class="thumbnail">
+                    <img src="prima.jpg" alt="">
+                </picture>
+                </div>
+             </a>
+          </article> <!-- card --> 
+        </div>
+    </section>
+    </main>
+
+<!-- below is the text and image aligned -->
+
+<div class="wrapper">
+    <img src="5star.png" class="rounded" alt="">
+    <text-box>
+        <h1> Rate Your Favourite Places <br>★★★★★</br></h1>
+        <p> The app for finding, rating and saving your favourite <br> London hotspots. Create your own profile, so you can </br> 
+        <br1> easily access your favourite rated places! </br1></p>
+    </text-box>
+</div>
+
+<!-- carousel below  -->
+
+<div class="container-lg my-3">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>
+        
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="review1.png" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="review2.png" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="review3.png" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</div>
+<!-- Subscribe Section -->
+<section id="subscribe">
+    <h2>Subscribe to our mailing list</h2>
+    <form id="subscribe-form">
+        <input type="email" id="email" placeholder="Email Address">
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-logo">
+            <h4>@LondonHotSpots</h4>
+        </div>
+        <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+       <div class="social-links">
+    <p>Find us on:</p>
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>                            
+  
+  <!-- javascript link below  -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="homepage.js"></script>
+</body>
+</html>

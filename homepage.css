@@ -1,0 +1,232 @@
+/* homepage */
+
+body {
+    margin: 50px;
+}
+
+/* nav bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #fff;
+}
+#logo {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links {
+    list-style: none;
+}
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    border-right: 1px solid #000;
+}
+.nav-links li:last-child {
+    border-right: none;
+}
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.nav-links li a:hover {
+    color: #0088a9;
+}
+
+/* top head below */
+
+.image {
+	max-width: 550px;
+	max-height: 550px;
+	margin-right: 90px;
+}
+
+.card {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	border-bottom: 1px solid #808080;
+	border-radius: 0%;
+  
+	& .card-body {
+	  padding: 1rem;
+	}
+}
+
+.card-body {
+	margin-left: 90px;
+}
+
+/* this is the title section above and below is 3 images in a row  */
+
+h2 {
+    padding: 15px;
+}
+
+
+/* the abbr are to do with the background */
+abbr,
+acronym {
+	border-bottom: 1px dotted #666; 
+	cursor: help;
+}
+
+.card-1 {
+	text-decoration: none;
+	border: 1px solid #808080;
+	border-radius: 5px;
+} 
+
+/* these two above are body */
+
+.card-1:hover { 
+	box-shadow: 3px 3px 8px hsl(0, 0%, 80%);    /* click and it takes you back to the top */
+}
+
+.card-image {
+	width: 350px;
+	height: 230px;
+}
+
+.card-image-1 {
+	width: 370px;
+	height: 230px;
+}
+
+.thumbnail img {
+	object-fit: cover;
+	width: 100%;
+	border-radius: 5px;
+}
+
+/* Flexbox stuff */
+
+.cards {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   background: white;
+   margin-bottom: 2em;	
+}
+
+/* below is the text and image aligned section */
+
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.wrapper {
+	display: flex; 
+	justify-content: space-evenly;
+	align-items: center;
+	min-height: 50vh;
+	border-bottom: 1px solid #808080;
+	text-align: center;
+}
+
+.rounded {
+	float: left;
+	border: 1px solid #808080;
+	border-radius: 5px;
+	width: 540px;
+}
+
+/* below is carousel */
+
+.carousel {
+	border-bottom: 1px solid #808080;
+}
+
+.carousel-item{
+	max-width: 700px;
+	max-height: 700px;
+	padding: 10px;
+	margin-left: 260px;
+}
+
+/* subscribe section below */
+
+#subscribe {
+    background: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+}
+#subscribe h2 {
+    margin-bottom: 20px;
+}
+#subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#email {
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* footer below */
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+}
+.footer-links li {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 2px solid #fff;
+}
+.footer-links li:last-child {
+    border-right: none;
+}
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.footer-links li a:hover {
+    color: #0088a9;
+}
+.bi {
+    font-size: 24px;           /* Adjust this value to suit your needs */
+}
+.social-links a {
+    color: #fff;              /* Changes the icon color to white */
+    margin: 0 10px;           /* Adds some space between the icons */
+    text-decoration: none;    /* Removes the default link underline */
+}
+.social-links a:hover {
+    color: #0088a9;           /* Light blue color when hover */
+}
+
+
+/* media only below */
+
+
+
+
+
+
+
